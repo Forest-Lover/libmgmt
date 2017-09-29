@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" alignment="Qt::AlignLeft">
+     <widget class="QWidget" name="widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="return_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>还书</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="pushButton_allbook">
+         <property name="text">
+          <string>所有图书</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="borrow_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>借书</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QPushButton" name="pushButton_allreader">
+         <property name="text">
+          <string>所有读者</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButtonpurchase">
+         <property name="text">
+          <string>购书</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QPushButton" name="pushButton_fine">
+         <property name="text">
+          <string>结算欠款</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="logoff">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>注销</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QTableView" name="tableView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="function">
+    <property name="title">
+     <string>功能</string>
+    </property>
+    <widget class="QMenu" name="inquiry">
+     <property name="title">
+      <string>查询</string>
+     </property>
+     <widget class="QMenu" name="menu">
+      <property name="title">
+       <string>图书信息</string>
+      </property>
+      <addaction name="action"/>
+      <addaction name="action_3"/>
+      <addaction name="action_5"/>
+      <addaction name="action_4"/>
+      <addaction name="action_7"/>
+     </widget>
+     <widget class="QMenu" name="menu_2">
+      <property name="title">
+       <string>读者信息</string>
+      </property>
+      <addaction name="action_2"/>
+      <addaction name="action_6"/>
+      <addaction name="action_9"/>
+     </widget>
+     <addaction name="menu"/>
+     <addaction name="menu_2"/>
+     <addaction name="logirq"/>
+    </widget>
+    <addaction name="purchase"/>
+    <addaction name="borrow"/>
+    <addaction name="return_3"/>
+    <addaction name="inquiry"/>
+    <addaction name="action_10"/>
+    <addaction name="action_11"/>
+   </widget>
+   <widget class="QMenu" name="help">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="readme"/>
+    <addaction name="about"/>
+   </widget>
+   <addaction name="function"/>
+   <addaction name="help"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="purchase">
+   <property name="text">
+    <string>购书</string>
+   </property>
+  </action>
+  <action name="borrow">
+   <property name="text">
+    <string>借书</string>
+   </property>
+  </action>
+  <action name="return_3">
+   <property name="text">
+    <string>还书</string>
+   </property>
+  </action>
+  <action name="logirq">
+   <property name="text">
+    <string>操作记录</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>关于系统</string>
+   </property>
+  </action>
+  <action name="readme">
+   <property name="text">
+    <string>使用说明</string>
+   </property>
+  </action>
+  <action name="about">
+   <property name="text">
+    <string>关于系统</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>按编号查询</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>按编号查询</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>按书名查询</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>按作者查询</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>按姓名查询</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>按出版社查询</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>所有图书</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>所有读者</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>结算欠款</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="text">
+    <string>添加读者</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_allbook</sender>
+   <signal>clicked()</signal>
+   <receiver>action_7</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>289</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>289</x>
+     <y>55</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_allreader</sender>
+   <signal>clicked()</signal>
+   <receiver>action_9</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>370</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>370</x>
+     <y>55</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonpurchase</sender>
+   <signal>clicked()</signal>
+   <receiver>purchase</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>46</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>46</x>
+     <y>55</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_fine</sender>
+   <signal>clicked()</signal>
+   <receiver>action_10</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>451</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
